@@ -1,0 +1,42 @@
+{
+  "name": "introstarwars",
+  "version": "1.0.0",
+  "description": "Intro Star Wars - desenvolvendo a intro de Star Wars utilizando HTML, CSS, JavaScript e Node.js",
+  "main": "app.js", 
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tavarina/IntroStarWars.git"
+  },
+  "author": "Fabiana Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tavarina/IntroStarWars/issues"
+  },
+  "homepage": "https://github.com/Tavarina/IntroStarWars#readme",
+  "dependencies": {
+    "eslint-friendly-formatter": "^4.0.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "husky": "^8.0.3"
+  },
+  "husky": {
+    "pre-commit": "lint-staged",
+    "pre-push": "npm run lint"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
