@@ -6,10 +6,12 @@ O projeto foi criado com base ao curso maisMulheres in Tech - Manas in Tech </br
 Prof Glaucia Lemos </br>
 
 </br>
- Comando para rodar o projeto: 
-</br>
 
- **nodemon**
+1. Instalar as dependências locais executando o comando: </br>
+- npm install </br>
+
+2. E depois, executar o comando: </br>
+- **nodemon** </br>
 
  abrir no browser: https://localhost:3000
 
